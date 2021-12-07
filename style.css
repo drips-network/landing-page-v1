@@ -1,0 +1,75 @@
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+html { font-family: 'Inter var', sans-serif; }
+}
+
+body {
+    font-family: Inter, sans-serif;
+    background: #090928;
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+h1 {
+    font-size: 8vw;
+    font-weight: 900;
+    letter-spacing: -.1rem;
+    line-height: 8.5vw;
+    margin: 2vw;
+}
+
+.header {
+    width: 30vw;
+    height:30vw;
+    padding: 2vw;
+    position: fixed;
+    top:0;
+    pointer-events: none;
+}
+
+.header.left {
+    left:0;
+    text-align: left;
+    background: linear-gradient(137deg, #090928 11.63%, rgba(9, 9, 40, 0.991353) 14.4%, rgba(9, 9, 40, 0.96449) 17.16%, rgba(9, 9, 40, 0.91834) 19.92%, rgba(9, 9, 40, 0.852589) 22.69%, rgba(9, 9, 40, 0.768225) 25.45%, rgba(9, 9, 40, 0.668116) 28.22%, rgba(9, 9, 40, 0.557309) 30.98%, rgba(9, 9, 40, 0.442691) 33.74%, rgba(9, 9, 40, 0.331884) 36.51%, rgba(9, 9, 40, 0.231775) 39.27%, rgba(9, 9, 40, 0.147411) 42.04%, rgba(9, 9, 40, 0.0816599) 44.8%, rgba(9, 9, 40, 0.03551) 47.56%, rgba(9, 9, 40, 0.0086472) 50.33%, rgba(9, 9, 40, 0) 53.09%);
+}
+
+.header.right {
+    right:0;
+    text-align: right;
+    background: linear-gradient(-137deg, #090928 11.63%, rgba(9, 9, 40, 0.991353) 14.4%, rgba(9, 9, 40, 0.96449) 17.16%, rgba(9, 9, 40, 0.91834) 19.92%, rgba(9, 9, 40, 0.852589) 22.69%, rgba(9, 9, 40, 0.768225) 25.45%, rgba(9, 9, 40, 0.668116) 28.22%, rgba(9, 9, 40, 0.557309) 30.98%, rgba(9, 9, 40, 0.442691) 33.74%, rgba(9, 9, 40, 0.331884) 36.51%, rgba(9, 9, 40, 0.231775) 39.27%, rgba(9, 9, 40, 0.147411) 42.04%, rgba(9, 9, 40, 0.0816599) 44.8%, rgba(9, 9, 40, 0.03551) 47.56%, rgba(9, 9, 40, 0.0086472) 50.33%, rgba(9, 9, 40, 0) 53.09%);
+}
+
+section#intro {
+    width: 72vw;
+    margin: 0 auto;
+    padding-top: 5vw;
+}
+
+p {
+    max-width: 60rem;
+    margin: 0 auto;
+    font-size: calc(1.5vw + 8px);
+    line-height: 1.5;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+a#logo {
+    margin-top: 0.75rem;
+    cursor: pointer;
+}
+
+a.button {
+    cursor: pointer;
+    font-weight: 700;
+    display: inline-block;
+    padding: 1rem 2rem 3.5rem;
+    border-radius: 10rem;
+    color: white;
+    text-decoration: none;
+    font-size: calc(1.5vw + 8px);
+    height: 0;
+    box-shadow: 0px -19.137414932250977px 40.014591217041016px 0px rgba(255, 255, 255, 0.25) inset;
+}
