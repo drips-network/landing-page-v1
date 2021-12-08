@@ -6,9 +6,13 @@ html { font-family: 'Inter var', sans-serif; }
 
 @font-face {
     font-family: 'Cheee';
-    src:  url('Cheee-Conshred.woff2') format('woff2'),
-          url('Cheee-Conshred.woff') format('woff');
-  }
+    src:  url('assets/Cheee-Conshred.woff2') format('woff2'),
+          url('assets/Cheee-Conshred.woff') format('woff');
+}
+
+.cheee {
+    font-family: 'Cheee', sans-serif;
+}
 
 body {
     font-family: Inter, sans-serif;
@@ -37,7 +41,6 @@ h2 {
     padding: 2vw;
     position: fixed;
     top:0;
-    pointer-events: none;
 }
 
 .header.left {
@@ -56,6 +59,12 @@ section#intro {
     width: 72vw;
     margin: 0 auto;
     padding-top: 5vw;
+}
+
+#intro h1 span.cheee {
+    padding: 1vw 3vw;
+    border-radius: 30vw;
+    box-shadow: 0px -19.137414932250977px 40.014591217041016px 0px rgba(255, 255, 255, 0.25) inset;
 }
 
 p {
@@ -96,22 +105,24 @@ a.button {
  }
 
  .step {
-     background-image: url(assets/step.svg);
-     background-size: 100% 100%;
-     width: 80vw;
-     margin: 0 auto;
-     height: 30vw;
-     padding: 5vw;
-     display: flex;
-     align-items: center;
- }
+    background-image: url(assets/step.svg);
+    background-size: 100% 100%;
+    width: 80vw;
+    margin: 0 auto;
+    height: 30vw;
+    padding: 5vw;
+    display: flex;
+    align-items: center;
+    border-radius: 30vw;
+}
 
  .step p {
-     padding: 0 3vw;
+    padding: 0 3vw;
  }
 
  .step h1 {
-    font-family: 'Cheee';
+    font-size: 15vw;
+    margin-bottom: 5vw;
  }
 
  .step img {
@@ -129,4 +140,18 @@ a.button {
  .step img.goal {
     padding: 10vw;
     max-height: 80%;
+ }
+
+@media screen and (max-width: 800px) {
+    .step {
+        flex-direction: column;
+        height: auto;
+        background-image: none;
+        border-radius: 0;
+        margin-bottom: 10vw;
+    }
+
+    .step {
+        display: inline-block;
+    }
  }
