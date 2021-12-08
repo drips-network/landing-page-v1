@@ -16,7 +16,7 @@ html { font-family: 'Inter var', sans-serif; }
 
 body {
     font-family: Inter, sans-serif;
-    background: #090928;
+    background: #0A092E;
     color: white;
     text-align: center;
     margin: 0 0 10vw;
@@ -74,30 +74,21 @@ section#intro {
 }
 
 #arrow-container {
-    height: 10vw;
+    height: 2vw;
     width: 2vw;
-    margin: 0 auto;
+    margin: 5vw auto;
     position: relative;
 }
 
 @keyframes arrow {
     0% {
-        top: 80%;
+        top: 0%;
     }
-    20% {
+    33% {
         top: 100%;
     }
-    30% {
-        top: 80%;
-    }
-    50% {
-        top: 100%;
-    }
-    80% {
-        top: 100%;
-    }
-    100% {
-        top: 80%;
+    66% {
+        top: 0%;
     }
 }
 
@@ -105,7 +96,7 @@ section#intro {
     position: absolute;
     font-size: 2vw;
     top: 0%;
-    animation: arrow 1.8s cubic-bezier(0.34, 1.56, 0.64, 1) infinite;
+    animation: arrow 2s cubic-bezier(0.34, 1.56, 0.64, 1) infinite;
 }
 
 p {
