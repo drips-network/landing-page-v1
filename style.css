@@ -84,8 +84,11 @@ section#intro {
     0% {
         top: 0%;
     }
-    33% {
+    30% {
         top: 100%;
+    }
+    80 % {
+        top: 0%;
     }
     66% {
         top: 0%;
@@ -93,6 +96,7 @@ section#intro {
 }
 
 #arrow{
+    opacity: 0.5;
     position: absolute;
     font-size: 2vw;
     top: 0%;
