@@ -20,6 +20,7 @@ body {
     color: white;
     text-align: center;
     margin: 0 0 10vw;
+    cursor: default;
 }
 
 h1 {
@@ -128,46 +129,75 @@ section#diagram {
     padding-top: 5vw;
  }
 
- #diagram svg {
+ #diagram #diagram-image {
      margin-top: 4vw;
+     background: url('assets/diagram.png') no-repeat center center;
+     background-size: contain;
+     height: 50vw;
  }
 
+section#how-it-works {
+    width: 90vw;
+    margin: 15vw auto 5vw;
+    padding: 2.5vw 0;
+    background-repeat: no-repeat;
+    background-image: url('assets/squiggle-top.png'),
+                        url('assets/squiggle-bottom.png'),
+                        url('assets/squiggle-left.png'),
+                        url('assets/squiggle-right.png');
+    background-position: top, bottom, left 17.8vw, right;
+    background-size: 100%, 100%, 3% 82.37%, 3% 82.37%;
+}
+
  .step {
-    background-image: url(assets/step.svg);
-    background-size: 100% 100%;
     width: 80vw;
-    margin: 0 auto;
+    margin: 5vw auto;
     height: 30vw;
     padding: 5vw;
     display: flex;
     align-items: center;
+    justify-content: center;
     border-radius: 30vw;
+}
+
+.step:nth-child(2n + 1) {
+    flex-direction: row-reverse;
+}
+
+.step .text {
+    width: 45   %;
+    padding: 0 2vw;
 }
 
  .step p {
     padding: 0 3vw;
+    width: 32vw;
  }
 
- .step h1 {
-    font-size: 15vw;
-    margin-bottom: 5vw;
+ .step .step-number {
+    width: 10vw;
+    margin-bottom: 2vw;
  }
 
  .step img {
-     max-width: 40%;;
-     padding:5vw;
-     max-height: 50%;
+     padding: 0;
      width: auto;
+     height: 100%;
  }
 
  .step img.nft {
-    padding: 10vw;
-    max-height: 80%;
+    padding: 0 10vw;
  }
 
- .step img.goal {
-    padding: 10vw;
-    max-height: 80%;
+.step img.benefits {
+    width: 40%;
+    height: auto;
+ }
+
+ .step img.funds {
+    width: 40%;
+    height: auto;
+    padding: 0 5vw;
  }
 
 @media screen and (max-width: 800px) {
@@ -177,9 +207,19 @@ section#diagram {
         background-image: none;
         border-radius: 0;
         margin-bottom: 10vw;
+        flex-direction: unset;
+    }
+    
+    .step:nth-child(2n + 1) {
+        flex-direction: unset;
     }
 
-    .step {
-        display: inline-block;
-    }
+    .step img {
+        width: 80%;
+     }
+
+     .step img.nft {
+        padding: 0;
+     }
+    
  }
