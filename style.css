@@ -70,7 +70,7 @@ h2 {
 
 section#intro {
     width: 72vw;
-    margin: 0 auto;
+    margin: 4vw auto 0;
     padding-top: 5vw;
 }
 
@@ -145,8 +145,8 @@ section#how-it-works {
                         url('assets/squiggle-bottom.png'),
                         url('assets/squiggle-left.png'),
                         url('assets/squiggle-right.png');
-    background-position: top, bottom, left 17.8vw, right;
-    background-size: 100%, 100%, 3% 82.37%, 3% 82.37%;
+    background-position: top, bottom, left, right;
+    background-size: 100%, 100%, 3% 82.39%, 3% 82.39%;
 }
 
  .step {
@@ -199,6 +199,10 @@ section#how-it-works {
     height: auto;
     padding: 0 5vw;
  }
+
+section#explore svg {
+    padding-top: 4vw;
+}
 
 @media screen and (max-width: 800px) {
     .step {
