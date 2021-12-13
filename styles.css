@@ -375,6 +375,10 @@ section#explore svg {
  }
 
  @media screen and (max-width: 500px) {
+    section#how-it-works {
+        background-size: 100%, 100%, 3% 76%, 3% 76%;
+    }
+
     .step {
         height: 25.5vw;
     }
