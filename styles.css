@@ -361,4 +361,8 @@ section#explore svg {
     section#how-it-works {
         background-size: 100%, 100%, 3% 91.49%, 3% 91.49%;
     }
+
+    .header.right a.button {
+        display:none
+    }
  }
