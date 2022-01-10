@@ -107,7 +107,7 @@ section#intro {
 p {
     max-width: 60rem;
     margin: 0 auto;
-    font-size: calc(1.25vw + 12px);
+    font-size: calc(1.25vw + 8px);
     line-height: 1.5;
     font-weight: 300;
     color: rgba(255, 255, 255, 0.75);
