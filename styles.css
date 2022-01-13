@@ -147,7 +147,7 @@ section#intro {
 p {
   max-width: 60rem;
   margin: 0 auto;
-  font-size: calc(1.25vw + 8px);
+  font-size: calc(1.25vw + 4px);
   line-height: 1.5;
   font-weight: 300;
   color: rgba(255, 255, 255, 0.75);
@@ -194,22 +194,35 @@ section#diagram {
 #features {
   display: flex;
   flex-direction: row;
-  margin-top: 5vw;
+  width: 83vw;
+  margin: 15vw auto 5vw;
+  padding: 9.4vw 6vw 14.5vw;
+  background-repeat: no-repeat;
+  background-image: url(assets/squiggle-top.png),
+    url(assets/squiggle-bottom.png);
+  background-position: top, bottom;
+  background-size: 100%, 100%;
 }
 
 #features .feature {
+  padding: 0 1vw;
+  height: 20.7vw;
+  width: 30vw;
+}
+
+#features .feature svg {
+  height: 20vw;
+  width: 26vw;
 }
 
 section#how-it-works {
   width: 90vw;
   margin: 15vw auto 5vw;
   padding: 9.5vw 0;
-  background-repeat: no-repeat;
-  background-image: url("assets/squiggle-top.png"),
-    url("assets/squiggle-bottom.png"), url("assets/squiggle-left.png"),
-    url("assets/squiggle-right.png");
-  background-position: top, bottom, left, right;
-  background-size: 100%, 100%, 3% 81%, 3% 81%;
+}
+
+section#how-it-works .step:first-of-type {
+  margin-top: 5vw;
 }
 
 .step {
@@ -222,7 +235,7 @@ section#how-it-works {
   border-radius: 30vw;
 }
 
-.step:nth-child(2n + 1) {
+.step:nth-child(2n + 2) {
   flex-direction: row-reverse;
 }
 
@@ -238,7 +251,7 @@ section#how-it-works {
 }
 
 .step .step-number {
-  width: 15vw;
+  width: 11vw;
   margin-bottom: 2vw;
 }
 
@@ -344,10 +357,6 @@ section#explore svg {
 }
 
 @media screen and (max-width: 800px) {
-  section#how-it-works {
-    background-size: 100%, 100%, 3% 91.5%, 3% 91.5%;
-  }
-
   .step {
     flex-direction: column;
     width: auto;
@@ -360,7 +369,12 @@ section#explore svg {
     width: auto;
   }
 
-  .step:nth-child(2n + 1) {
+  .step {
+    margin-top: 2vw;
+    flex-direction: column;
+  }
+
+  .step:nth-child(2n + 2) {
     flex-direction: column;
   }
 
@@ -370,6 +384,11 @@ section#explore svg {
 
   .step svg.nft {
     padding: 0;
+  }
+
+  .step .step-number {
+    width: 20vw;
+    margin-top: 5vw;
   }
 
   #arrow-container {
@@ -395,6 +414,10 @@ section#explore svg {
     margin-bottom: 5vw;
   }
 
+  h2 {
+    font-size: 7vw;
+  }
+
   section#diagram {
     margin-top: 20vw;
   }
@@ -403,15 +426,39 @@ section#explore svg {
     margin-top: 4vw;
     height: 120vw;
   }
+
+  #features {
+    flex-direction: column;
+    background-image: url(assets/squiggle-left.png),
+      url(assets/squiggle-right.png);
+    background-position: left, right;
+    background-size: 50%, 50%;
+    padding: 14.4vw 6vw 25.5vw;
+  }
+
+  #features .feature {
+    width: 80%;
+    margin: 1vw auto;
+    height: auto;
+    padding: 0;
+  }
+
+  #features .feature svg {
+    height: 45vw;
+    width: 80%;
+    margin: 4vw 0 0;
+  }
 }
 
 @media screen and (max-width: 500px) {
-  section#how-it-works {
-    background-size: 100%, 100%, 3% 91.49%, 3% 91.49%;
-  }
-
   .header.right a.button {
     display: none;
+  }
+
+  #features .feature svg {
+    height: 45vw;
+    width: 80%;
+    margin: 4vw 0 0;
   }
 
   p {
