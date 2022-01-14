@@ -45,6 +45,10 @@ h2 {
   margin-top: 3vw 0 2vw;
 }
 
+a {
+  color: white;
+}
+
 .header {
   width: 90vw;
   height: 10vw;
@@ -202,7 +206,7 @@ section#diagram {
   flex-direction: row;
   width: 83vw;
   margin: 15vw auto 5vw;
-  padding: 9.4vw 6vw 14.5vw;
+  padding: 5.9vw 6vw 18vw;
   background-repeat: no-repeat;
   background-image: url(assets/squiggle-top.png),
     url(assets/squiggle-bottom.png);
@@ -424,6 +428,10 @@ section#explore svg {
     font-size: 7vw;
   }
 
+  h3 {
+    margin: 0 0 1vw;
+  }
+
   section#diagram {
     margin-top: 20vw;
   }
@@ -462,7 +470,7 @@ section#explore svg {
   }
 
   #features .feature svg {
-    height: 45vw;
+    height: 35vw;
     width: 80%;
     margin: 4vw 0 0;
   }
