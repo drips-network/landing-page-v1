@@ -18,6 +18,11 @@ html {
   font-family: "Cheee", sans-serif;
 }
 
+::selection {
+  background: rgba(22, 243, 54, 0.9);
+  color: #0a092e;
+}
+
 body {
   font-family: Inter, sans-serif;
   background: #0a092e;
