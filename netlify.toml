@@ -1,0 +1,14 @@
+[[redirects]]
+  from = "/disclaimer"
+  to = "https://app.drips.network/disclaimer"
+  status = 200
+
+[[redirects]]
+  from = "/privacy"
+  to = "https://app.drips.network/privacy"
+  status = 200
+
+[[redirects]]
+  from = "/access"
+  to = "https://app.drips.network/access"
+  status = 200
