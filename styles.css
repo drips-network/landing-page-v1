@@ -28,7 +28,7 @@ body {
   background: #0a092e;
   color: white;
   text-align: center;
-  margin: 0 0 10vw;
+  margin: 0;
   cursor: default;
 }
 
@@ -364,6 +364,23 @@ path.fade4 {
 
 section#explore svg {
   padding-top: 4vw;
+}
+
+footer{
+  text-align: center;
+  margin-top:24vw;
+  padding-bottom:1.2rem;
+}
+footer a{
+  color: rgba(255, 255, 255, 0.75);
+  display: inline-block;
+  text-decoration: none;
+  margin: 0 0.5em;
+  font-size:0.75rem;
+}
+footer a:hover{
+  color:white;
+  transition: all 150ms;
 }
 
 @media screen and (max-width: 800px) {
